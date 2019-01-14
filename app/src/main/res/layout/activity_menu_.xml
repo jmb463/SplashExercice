@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxia"
+    tools:context=".Menu_Activity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="@color/title_color"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="50"
+            android:text="@string/menu"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/screen_title_size" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListView_Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout01"
+        android:layout_centerHorizontal="true"
+        android:divider="@color/colorAccent"
+        android:listSelector="@color/title_glow">
+
+    </ListView>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ListView_Menu"
+        android:src="@drawable/ovni"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo" />
+</RelativeLayout>
